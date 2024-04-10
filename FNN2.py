@@ -30,7 +30,7 @@ def predict(net, input) :
     
     v3 = np.dot(h2, W3) + b3
     h3 = sigmoid(v3)
-    print("v3:\n", v3), print("h1:\n", h3)
+    print("v3:\n", v3), print("h3:\n", h3)
 
     v4 = np.dot(h3, W4) + b4
     h4 = sigmoid(v4)
@@ -54,8 +54,10 @@ def softmax(x) :
 
 FNN = setup_network()
 
+
 x = np.array([[2.2, 1.3],
               [1.2, 2.3]])
+
 
 print("Input : \n", x)
 
